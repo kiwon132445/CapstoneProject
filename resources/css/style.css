@@ -10,13 +10,20 @@ html {
 .center {
   margin:0 auto;
 }
+.border {
+  border:1px solid black;
+}
 
 /*Heading*/
 header {
-  padding:1rem 1.5rem;
   height:4rem;
-  position:fixed;
   background:white;
+  width:100%;
+  z-index:1;
+  position:fixed;
+}
+.heading {
+  padding:1rem 1.5rem;
   display:flex;
   flex-direction:row;
   align-items:center;
@@ -26,8 +33,15 @@ header {
   display:flex;
   align-items:center;
   height:2rem;
-  font-size:1.5rem;
+  font-size:1rem;
+}
+.logo img {
+  height:2rem;
 }
 .grey {
   color:grey;
+}
+.navigation span{
+  margin-left:1rem;
+  font-size:1rem;
 }
