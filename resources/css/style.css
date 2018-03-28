@@ -10,6 +10,9 @@ html {
 .center {
   margin:0 auto;
 }
+.lightgrey {
+  background-color:lightgrey;
+}
 .border {
   border:1px solid black;
 }
@@ -44,4 +47,25 @@ header {
 .navigation span{
   margin-left:1rem;
   font-size:1rem;
+}
+
+/*Main Content*/
+/*Learn*/
+.banner {
+  position:relative;
+  top:4rem;
+  display:flex;
+  justify-content:flex-start;
+}
+.banner .image {
+  display:inline;
+  margin:2rem 1.5rem;
+}
+.banner img {
+  height:auto;
+  width:60%;
+}
+.contents h1 {
+  font-weight:800;
+  font-size:2rem;
 }
