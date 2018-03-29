@@ -7,9 +7,6 @@ html {
 .bold {
   font-weight:bold;
 }
-.center {
-  margin:0 auto;
-}
 .lightgrey {
   background-color:lightgrey;
 }
@@ -50,18 +47,18 @@ header {
 }
 
 /*Main Content*/
-/*Learn*/
-.banner {
+.main {
   position:relative;
   top:4rem;
+}
+/*Learn*/
+.banner {
   display:flex;
+  align-items:center;
   justify-content:flex-start;
 }
-.banner .image {
-  display:inline;
-  margin:2rem 1.5rem;
-}
 .banner img {
+  margin:2rem 1.5rem;
   height:auto;
   width:60%;
 }
