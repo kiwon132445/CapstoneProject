@@ -62,7 +62,12 @@ header {
   height:auto;
   width:60%;
 }
-.contents h1 {
+.banner .contents h1 {
   font-weight:800;
   font-size:2rem;
+}
+
+footer {
+  position:relative;
+  top:4rem;
 }
