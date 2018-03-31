@@ -26,6 +26,10 @@ h2 {
   font-weight:750;
   font-size:1.8rem;
 }
+h3 {
+  font-weight:bold;
+  font-size:1.5rem;
+}
 
 /*Heading*/
 header {
@@ -89,8 +93,55 @@ header {
 }
 
 /*It doesn't hurt to keep practicing*/
+.practice {
+  display:flex;
+
+}
+.practice .contents {
+  display:flex;
+  flex-direction: column;
+  padding:2rem 1.5rem;
+  max-width:60%;
+}
+.practice .contents .main-image{
+  max-width: 100%;
+  margin-bottom:2rem;
+}
+.practice .less-width {
+  max-width:80%;
+}
+.practice .less-width p {
+  margin-top:2rem;
+}
+.practice h2 {
+  margin-bottom:1.5rem;
+}
+
+.practice .supporting {
+  max-width: 40%;
+}
+.practice .supporting img {
+  height:auto;
+  max-width:35%;
+  margin:1rem;
+}
+.practice .supporting .seperation {
+  max-width:65%;
+}
+.date, .campus, .lecture {
+  display:flex;
+  align-items:center;
+}
+.practice .supporting p {
+  margin:0.5rem 0;
+}
+.grey-border {
+  border:1px solid lightgrey;
+}
 
 
+
+/*Footer*/
 footer {
   position:relative;
   top:4rem;
