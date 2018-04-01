@@ -112,6 +112,10 @@ header {
 }
 .practice .less-width p {
   margin-top:2rem;
+  line-height:1.4;
+}
+.practice .note {
+  color:black;
 }
 .practice h2 {
   margin-bottom:1.5rem;
@@ -119,6 +123,7 @@ header {
 
 .practice .supporting {
   max-width: 40%;
+  padding-top:2rem;
 }
 .practice .supporting img {
   height:auto;
@@ -139,6 +144,47 @@ header {
   border:1px solid lightgrey;
 }
 
+/*Start learning*/
+.start-learning {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:2rem 4.5rem;
+}
+.start-learning .top, .start-learning .bottom {
+  margin-top:2rem;
+}
+.start-learning .outer img {
+  height:auto;
+  max-width:100%;
+}
+.start-learning .outer .supporting {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+.start-learning .supporting .middle {
+  margin:0 2rem;
+}
+
+.start-learning .contents {
+  background-color:white;
+  max-width:30%;
+
+}
+.start-learning .contents h3 {
+  margin-top:1rem;
+}
+.start-learning .contents h5 {
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+  font-size:1.3rem;
+  color:grey;
+}
+.start-learning .contents .details {
+  margin-left:1rem;
+  margin-bottom:1.5rem;
+}
 
 
 /*Footer*/
