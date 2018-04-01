@@ -13,6 +13,12 @@ body {
 .lightgrey {
   background-color:lightgrey;
 }
+.mobile {
+  display:none;
+}
+.grey-border {
+  border:1px solid lightgrey;
+}
 /*
 .border {
   border:1px solid black;
@@ -29,6 +35,10 @@ h2 {
 h3 {
   font-weight:bold;
   font-size:1.5rem;
+}
+a {
+  color:dodgerblue;
+  text-decoration:none;
 }
 
 
@@ -64,6 +74,23 @@ header {
   margin-left:1rem;
   font-size:1rem;
 }
+@media only screen and (max-width:480px) {
+  .mobile-border {
+    border:1px solid lightgrey;
+  }
+  .heading {
+    justify-content: space-around;
+  }
+  .heading span, .heading nav {
+    display:none;
+  }
+  .heading .mobile img {
+    height:2rem;
+  }
+  .mobile {
+    display:inherit;
+  }
+}
 
 
 
@@ -95,7 +122,26 @@ header {
   padding-bottom:0.5rem;
   text-align: center;
 }
-
+@media only screen and (max-width:480px) {
+  .banner {
+    flex-direction:column;
+  }
+  .banner img {
+    margin:0;
+    width:100%;
+  }
+  .banner .button {
+    background-color:grey;
+  }
+  .banner .contents {
+    max-width: none;
+    margin:2rem 1.5rem;
+  }
+  .banner .details h4 {
+    margin-bottom:1.5rem;
+    font-size:1.3rem;
+  }
+}
 
 
 /*It doesn't hurt to keep practicing*/
@@ -145,10 +191,39 @@ header {
 .practice .supporting p {
   margin:0.5rem 0;
 }
-.grey-border {
-  border:1px solid lightgrey;
-}
 
+@media only screen and (max-width:480px) {
+  .desktop {
+    display:none;
+  }
+  .practice .supporting .seperation {
+    max-width:none;
+    padding-left:1rem;
+    margin-bottom:4rem;
+  }
+  .practice .contents {
+    display:none;
+  }
+  .practice .supporting {
+    max-width: none;
+  }
+  .practice .grey-border {
+    border:none;
+  }
+  .practice .supporting img {
+    max-width:100%;
+  }
+  .practice {
+    flex-direction:column;
+  }
+  .practice .lightgrey {
+    background-color:white;
+  }
+  .date, .campus, .lecture {
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
 
 
 /*Start learning*/
@@ -193,6 +268,26 @@ header {
   margin-bottom:1.5rem;
 }
 
+@media only screen and (max-width:480px) {
+  .start-learning {
+    background-color: white;
+    padding:0;
+  }
+  .start-learning .title {
+    margin-bottom:1rem;
+  }
+  .start-learning .mobile {
+    display:flex;
+    flex-direction:column;
+    max-width:100%;
+  }
+  .start-learning h3 {
+    background-color:lightgrey;
+    padding-left: 1rem;
+    padding-top:1rem;
+    padding-bottom:1.5rem;
+  }
+}
 
 
 /*Thesis*/
@@ -245,12 +340,26 @@ header {
   font-size:1.1rem;
   line-height:1.4;
 }
+@media only screen and (max-width:480px) {
+
+}
+
 
 /*Footer*/
 footer {
+  padding:1rem 1.5rem;
+  margin-bottom:3rem;
   position:relative;
   top:4rem;
+  display:flex;
+  justify-content:space-between;
 }
 .border-top {
   border-top:1px solid lightgrey;
+}
+.terms span {
+  margin-left:1.5rem;
+}
+@media only screen and (max-width:480px) {
+
 }
